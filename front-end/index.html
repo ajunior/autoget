@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adjamilton Junior, Rayssa Freitas">
+    <meta name="description" content="Interface Web para download automático usando Wget.">
+    <meta name="keywords" content="autoget, download, wget, ifpb, javascript, express">
+    <title>autoget</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-danger">
+            <!-- LOGO -->
+            <div class="navbar-brand">
+                <a class="lead" href="index.html">
+                    <span class="text-white"><i class="fa fa-download" aria-hidden="true"></i></span> <span id="brand-auto" class="text-white">autoget</span>
+                </a>
+            </div>
+            <!-- DASHBOARD -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-toggler-right mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn nav-link" href="#">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="download" class="container">
+        <!-- URL PARA DOWNLOAD -->
+        <div id="url-bar" class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Digite a URL">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Baixar</button>
+                </form>
+            </div>
+        </div>
+        <!-- STATUS DO ARQUIVO BAIXADO -->
+        <div id="status" class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div>
+    </section>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p class="lead text-center">
+                    Projeto desenvolvido para disciplina de Linguagem Script
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Carregando os scripts JS -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+</body>
+</html>
