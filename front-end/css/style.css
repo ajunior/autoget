@@ -1,8 +1,21 @@
+
 #brand-auto {
-    
-    font-size: 28px;
+    font-size: 48px;
+    color: #00b5ec;
 }
 
 header nav a:hover {
     text-decoration: none;
+}
+
+#url {
+    width: 600px;
+}
+
+#download {
+    margin-top: 200px;
+}
+
+#dashboard {
+    background-color: #00b5ec;
 }

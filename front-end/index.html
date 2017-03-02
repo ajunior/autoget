@@ -7,62 +7,108 @@
     <meta name="description" content="Interface Web para download automático usando Wget.">
     <meta name="keywords" content="autoget, download, wget, ifpb, javascript, express">
     <title>autoget</title>
-
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-danger">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-transparent">
             <!-- LOGO -->
             <div class="navbar-brand">
                 <a class="lead" href="index.html">
-                    <span class="text-white"><i class="fa fa-download" aria-hidden="true"></i></span> <span id="brand-auto" class="text-white">autoget</span>
+                    <span id="brand-auto">autoget</span>
                 </a>
-            </div>
-            <!-- DASHBOARD -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-toggler-right mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn nav-link" href="#">Dashboard</a>
-                    </li>
-                </ul>
             </div>
         </nav>
     </header>
 
+    <!-- ÁREA DE DOWNLOAD -->
     <section id="download" class="container">
         <!-- URL PARA DOWNLOAD -->
         <div id="url-bar" class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Digite a URL">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Baixar</button>
-                </form>
-            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <form>
+                        <div class="form-group row">
+                            <input id="url" class="form-control mr-sm-2" type="text" placeholder="Digite a URL">
+                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Baixar</button>
+                        </div>
+                    </form>
+
+                    <!-- STATUS DO ARQUIVO BAIXADO -->
+                    <div class="row invisible">
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        </div>
+                    </div>
+                </div>
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
         </div>
-        <!-- STATUS DO ARQUIVO BAIXADO -->
-        <div id="status" class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div>
     </section>
 
-    <footer class="container">
-        <div class="row">
+        <!-- FOOTER -->
+    <footer class="fixed-bottom">
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="container-fluid bg-primary">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="text-white">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i> 
+                        autoget em números...
+                    </h3>
+                </div>
+             </div>
+
+
+            <div class="row">
+
+                <div id="qtde-downloads" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <p>
+                        Teste 1
+                    </p>
+                </div>
+                    
+                <div id="qtde-" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <p>
+                        Teste 1
+                    </p>
+                </div>
+                        
+                <div id="downloads-by-country" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <p>
+                        Teste 1
+                    </p>
+                </div>
+                            
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <p>
+                        Teste 1
+                    </p>
+                </div>
+            </div>
+        </section>
+       
+<!--
+        <div class="row invisible">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <p class="lead text-center">
                     Projeto desenvolvido para disciplina de Linguagem Script
                 </p>
             </div>
         </div>
+        -->
     </footer>
 
     <!-- Carregando os scripts JS -->
-    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+       $(".alert").alert('close')
+    </script>
 </body>
 </html>
